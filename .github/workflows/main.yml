@@ -9,6 +9,7 @@ on:
 
 
 jobs:
+# considering we have earlier jobs that needs does the deployment, we develop a Devops strategy that runs all the jobs in sequence, we can hav the job placed as the last step where we can run our automated test just after the deployment.
   test_run:
     name: rest assured mvn test
     runs-on: ubuntu-latest
